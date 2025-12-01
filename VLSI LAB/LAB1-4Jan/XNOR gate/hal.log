@@ -1,0 +1,35 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/student/Vatsal_58_VLSI/XNOR gate/cds.lib -logfile hal.log worklib.xnortb:module.
+hal: Snapshot:  worklib.xnortb:module.
+hal: Workspace: /home/student/Vatsal_58_VLSI/XNOR gate.
+hal: Date: Sat Jan 04 15:46:43 IST 2025.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+halcheck() [0x571b04]
+halcheck() [0x571be3]
+/usr/lib64/libc.so.6(+0x4eb80) [0x7f196aa3cb80]
+halcheck(st_lookup+0x1c) [0x51a7f5]
+halcheck(halserror+0x353) [0x56fbf5]
+halcheck() [0x4df792]
+halcheck(main+0xec) [0x4de69d]
+/usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x7f196aa28d85]
+halcheck() [0x4ce799]
+halcheck: *F,HALSIG: Unable to proceed further due to a critical error. Contact Cadence Design Systems for resolution to this problem.
+
+Analysis summary :
+
+ Fatals   : (1)
+  HALSIG (1)     
+
+Analysis failed.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/student/Vatsal_58_VLSI/XNOR gate/cds.lib -sortby severity -sortby category -sortby tag hal.log
+
