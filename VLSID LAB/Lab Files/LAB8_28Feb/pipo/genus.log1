@@ -1,0 +1,62 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[15:54:35.121273] Configured Lic search path (21.01-s002): 5280@cadence-encsrv
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: 
+Date:    Fri Feb 28 15:54:35 2025
+Host:    mit-ecpg-cdn30 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (20cores*28cpus*1physical cpu*Intel(R) Core(TM) i7-14700 33792KB) (15867360KB)
+PID:     15044
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[15:54:35.338257] Periodic Lic check successful
+[15:54:35.338264] Feature usage summary:
+[15:54:35.338264] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (4 seconds elapsed).
+
+WARNING: This version of the tool is 981 days old.
+@genus:root: 1> read_libs/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+invalid command name "read_libs/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib"
+@genus:root: 2> read_libs/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+invalid command name "read_libs/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib"
+@genus:root: 3> read_hdl pipi_seq.v
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'pipi_seq.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+@genus:root: 4> elaborate
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+        : Specify libraries using read_libs or read_mmmc.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+1
+@genus:root: 5> elaborate
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+1
+@genus:root: 6> read_libs/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+invalid command name "read_libs/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib"
+@genus:root: 7> 
+@genus:root: 7> 
+@genus:root: 7> read_hdl pipo_seq.v
+@genus:root: 8> elaborate
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+1

@@ -1,0 +1,7 @@
+ncvlog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+define worklib "/home/student/BTECH VLSI BATCH2/230959150/Exp 5/INCA_libs/worklib"
+|
+ncvlog: *W,DLCPTH (./cds.lib,1): cds.lib Invalid path '/home/student/BTECH VLSI BATCH2/230959150/Exp 5/INCA_libs/worklib' (cds.lib command ignored).
+ncvlog: *F,WRKBAD: logical library name WORK is bound to a bad library name 'worklib'.
+ncvlog: Memory Usage - 21.4M program + 22.1M data = 43.4M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)

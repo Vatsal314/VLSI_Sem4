@@ -1,0 +1,32 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_mod8_counter.clk tb_mod8_counter.count tb_mod8_counter.reset
+Created probe 1
+ncsim> run
+Time: 0 | Reset: 1 | Count: xxx
+Time: 5 | Reset: 1 | Count: 000
+Time: 20 | Reset: 0 | Count: 000
+Time: 25 | Reset: 0 | Count: 001
+Time: 35 | Reset: 0 | Count: 010
+Time: 45 | Reset: 0 | Count: 011
+Time: 55 | Reset: 0 | Count: 100
+Time: 65 | Reset: 0 | Count: 101
+Time: 75 | Reset: 0 | Count: 110
+Time: 85 | Reset: 0 | Count: 111
+Time: 95 | Reset: 0 | Count: 000
+Time: 100 | Reset: 1 | Count: 000
+Time: 120 | Reset: 0 | Count: 000
+Time: 125 | Reset: 0 | Count: 001
+Time: 135 | Reset: 0 | Count: 010
+Time: 145 | Reset: 0 | Count: 011
+Time: 155 | Reset: 0 | Count: 100
+Simulation stopped via $stop(1) at time 160 NS + 0
+ncsim> ^C
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 293.7M data = 332.3M total (335.9M Peak)
+ncsim: CPU Usage - 0.1s system + 0.0s user = 0.1s total (13.8s, 0.6% cpu)

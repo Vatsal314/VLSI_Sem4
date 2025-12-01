@@ -1,0 +1,5 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+ncsim: *E,DLCSMD: Dependent checksum module worklib.binary_multiplier_tb:module (VST) doesn't match with the checksum that's in the header of: snapshot worklib.binary_multiplier_tb:module (SSS).
+ncsim: *F,NOSIMU: Errors initializing simulation 'worklib.binary_multiplier_tb:module'.
+ncsim: Memory Usage - 38.6M program + 265.6M data = 304.3M total (304.3M Peak)
+ncsim: CPU Usage - 0.0s system + 0.0s user = 0.0s total (1.4s, 1.0% cpu)

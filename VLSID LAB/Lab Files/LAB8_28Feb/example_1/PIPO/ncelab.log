@@ -1,0 +1,9 @@
+ncelab(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+  DFFQXL \po_reg[3] (.CK (clk), .D (n_3), .Q (po[3]));
+                   |
+ncelab: *E,CUVMUR (./pipo_seq_netlist.v,15|19): instance 'pipo_tb.uut.\po_reg[3] ' of design unit 'DFFQXL' is unresolved in 'worklib.pipo_seq:module'.
+  NOR2BXL g7__2398(.AN (pi[3]), .B (rst), .Y (n_3));
+                 |
+ncelab: *E,CUVMUR (./pipo_seq_netlist.v,19|17): instance 'pipo_tb.uut.g7__2398' of design unit 'NOR2BXL' is unresolved in 'worklib.pipo_seq:module'.
+ncelab: Memory Usage - 49.9M program + 35.0M data = 84.9M total (Peak 84.9M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)

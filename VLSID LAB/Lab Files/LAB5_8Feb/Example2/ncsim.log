@@ -1,0 +1,50 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm equa_tb.a equa_tb.b equa_tb.c equa_tb.d equa_tb.e equa_tb.i equa_tb.y
+Created probe 1
+ncsim> run
+Time = 0, a = 0, b = 0, c = 0, d = 0,e = 0 y = 1
+Time = 10, a = 0, b = 0, c = 0, d = 0,e = 1 y = 1
+Time = 20, a = 0, b = 0, c = 0, d = 1,e = 0 y = 1
+Time = 30, a = 0, b = 0, c = 0, d = 1,e = 1 y = 1
+Time = 40, a = 0, b = 0, c = 1, d = 0,e = 0 y = 1
+Time = 50, a = 0, b = 0, c = 1, d = 0,e = 1 y = 1
+Time = 60, a = 0, b = 0, c = 1, d = 1,e = 0 y = 1
+Time = 70, a = 0, b = 0, c = 1, d = 1,e = 1 y = 1
+Time = 80, a = 0, b = 1, c = 0, d = 0,e = 0 y = 1
+Time = 90, a = 0, b = 1, c = 0, d = 0,e = 1 y = 1
+Time = 100, a = 0, b = 1, c = 0, d = 1,e = 0 y = 1
+Time = 110, a = 0, b = 1, c = 0, d = 1,e = 1 y = 1
+Time = 120, a = 0, b = 1, c = 1, d = 0,e = 0 y = 1
+Time = 130, a = 0, b = 1, c = 1, d = 0,e = 1 y = 1
+Time = 140, a = 0, b = 1, c = 1, d = 1,e = 0 y = 1
+Time = 150, a = 0, b = 1, c = 1, d = 1,e = 1 y = 0
+Time = 160, a = 1, b = 0, c = 0, d = 0,e = 0 y = 1
+Time = 170, a = 1, b = 0, c = 0, d = 0,e = 1 y = 0
+Time = 180, a = 1, b = 0, c = 0, d = 1,e = 0 y = 1
+Time = 190, a = 1, b = 0, c = 0, d = 1,e = 1 y = 0
+Time = 200, a = 1, b = 0, c = 1, d = 0,e = 0 y = 1
+Time = 210, a = 1, b = 0, c = 1, d = 0,e = 1 y = 0
+Time = 220, a = 1, b = 0, c = 1, d = 1,e = 0 y = 1
+Time = 230, a = 1, b = 0, c = 1, d = 1,e = 1 y = 0
+Time = 240, a = 1, b = 1, c = 0, d = 0,e = 0 y = 1
+Time = 250, a = 1, b = 1, c = 0, d = 0,e = 1 y = 0
+Time = 260, a = 1, b = 1, c = 0, d = 1,e = 0 y = 1
+Time = 270, a = 1, b = 1, c = 0, d = 1,e = 1 y = 0
+Time = 280, a = 1, b = 1, c = 1, d = 0,e = 0 y = 1
+Time = 290, a = 1, b = 1, c = 1, d = 0,e = 1 y = 0
+Time = 300, a = 1, b = 1, c = 1, d = 1,e = 0 y = 1
+Time = 310, a = 1, b = 1, c = 1, d = 1,e = 1 y = 0
+Time = 320, a = 0, b = 0, c = 0, d = 0,e = 0 y = 1
+Simulation stopped via $stop(1) at time 630 NS + 0
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 294.8M data = 333.4M total (337.0M Peak)
+ncsim: CPU Usage - 0.1s system + 0.0s user = 0.1s total (25.3s, 0.6% cpu)

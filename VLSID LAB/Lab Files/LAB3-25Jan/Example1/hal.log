@@ -1,0 +1,18 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/cds.lib -logfile hal.log /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux_tb.v.
+hal: Workspace: /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1.
+hal: Date: Sat Jan 25 14:19:25 IST 2025.
+
+hal: Running on design source files.....hhal: Snapshot:  worklib.mux32_tb:v.
+
+  ==========================================================================
+Compiling design 
+
+
+
+  ==========================================================================
+I/LAB3-25Jan/Example1/INCA_libs/irun.lnx8664.15.20.nc/.ncrun.lock'. pid:11811.
+	Top level design units:
+		mux32
+
+  ==========================================================================

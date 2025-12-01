@@ -1,0 +1,33 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm pipo_tb.clk pipo_tb.pi pipo_tb.po pipo_tb.rst
+Created probe 1
+ncsim> run
+Time: 0, pi:0001, po:xxxx
+Time: 5, pi:0001, po:0000
+Time: 15, pi:0001, po:0001
+Time: 20, pi:1001, po:0001
+Time: 25, pi:1001, po:1001
+Time: 30, pi:1010, po:1001
+Time: 35, pi:1010, po:1010
+Time: 40, pi:1011, po:1010
+Time: 45, pi:1011, po:1011
+Time: 50, pi:1110, po:1011
+Time: 55, pi:1110, po:1110
+Time: 60, pi:1111, po:1110
+Time: 65, pi:1111, po:1111
+Time: 70, pi:0000, po:1111
+Time: 75, pi:0000, po:0000
+Simulation complete via $finish(1) at time 100 NS + 0
+./pipo_tb.v:25 initial #100 $finish;
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 293.7M data = 332.3M total (335.9M Peak)
+ncsim: CPU Usage - 0.2s system + 0.1s user = 0.2s total (41.8s, 0.6% cpu)

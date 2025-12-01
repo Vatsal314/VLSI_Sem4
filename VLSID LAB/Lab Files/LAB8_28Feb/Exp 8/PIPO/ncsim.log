@@ -1,0 +1,5 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+ncsim: *E,DLCSMD: Dependent checksum module worklib.pipo_seq:module (VST) doesn't match with the checksum that's in the header of: snapshot worklib.pipo_tb:module (SSS).
+ncsim: *F,NOSIMU: Errors initializing simulation 'worklib.pipo_tb:module'.
+ncsim: Memory Usage - 38.6M program + 265.8M data = 304.5M total (306.4M Peak)
+ncsim: CPU Usage - 0.0s system + 0.0s user = 0.0s total (1.1s, 1.2% cpu)

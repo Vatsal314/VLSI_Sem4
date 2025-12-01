@@ -1,0 +1,24 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm cmos_4to1_mux_tb.I0 cmos_4to1_mux_tb.I1 cmos_4to1_mux_tb.I2 cmos_4to1_mux_tb.I3 cmos_4to1_mux_tb.S0 cmos_4to1_mux_tb.S1 cmos_4to1_mux_tb.Y
+Created probe 1
+ncsim> run
+S1=0 S0=0 I0=1 I1=0 I2=1 I3=0 -> Y=x
+S1=0 S0=1 I0=1 I1=0 I2=1 I3=0 -> Y=x
+S1=1 S0=0 I0=1 I1=0 I2=1 I3=0 -> Y=x
+S1=1 S0=1 I0=1 I1=0 I2=1 I3=0 -> Y=x
+S1=0 S0=0 I0=0 I1=1 I2=0 I3=1 -> Y=x
+S1=0 S0=1 I0=0 I1=1 I2=0 I3=1 -> Y=x
+S1=1 S0=0 I0=0 I1=1 I2=0 I3=1 -> Y=1
+S1=1 S0=1 I0=0 I1=1 I2=0 I3=1 -> Y=x
+Simulation complete via $finish(1) at time 80 NS + 0
+./cmos_4to1_mux_tb.v:27         $finish;
+ncsim> ^C
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 294.8M data = 333.4M total (337.0M Peak)
+ncsim: CPU Usage - 0.1s system + 0.0s user = 0.1s total (25.8s, 0.6% cpu)

@@ -1,0 +1,16 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm BinaryToExcess3_tb.binary BinaryToExcess3_tb.excess3
+Created probe 1
+ncsim> run
+Binary: 1001 => Excess-3: 1100
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> ^C
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 292.7M data = 331.3M total (334.9M Peak)
+ncsim: CPU Usage - 0.1s system + 0.0s user = 0.1s total (23.3s, 0.5% cpu)

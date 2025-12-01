@@ -1,0 +1,48 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Mar 01, 2025 at 14:13:59 IST
+irun
+	fa.v
+	fa_tb.v
+	-access +rwc
+	-gui
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		fa_tb
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           3       3
+		Scalar wires:        5       -
+		Initial blocks:      1       1
+		Cont. assignments:   0       2
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.fa_tb:v
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm fa_tb.a fa_tb.b fa_tb.cin fa_tb.cout fa_tb.sum
+Created probe 1
+ncsim> run
+Time=                   0, a=0, b=0, cin=0, sum=0, cout=0
+Time=                  10, a=0, b=0, cin=1, sum=1, cout=0
+Time=                  20, a=0, b=1, cin=0, sum=1, cout=0
+Time=                  30, a=0, b=1, cin=1, sum=0, cout=1
+Time=                  40, a=1, b=0, cin=0, sum=1, cout=0
+Time=                  50, a=1, b=0, cin=1, sum=0, cout=1
+Time=                  60, a=1, b=1, cin=0, sum=0, cout=1
+Time=                  70, a=1, b=1, cin=1, sum=1, cout=1
+Simulation complete via $finish(1) at time 80 NS + 0
+./fa_tb.v:17 $finish;
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	irun(64)	15.20-s086: Exiting on Mar 01, 2025 at 14:14:20 IST  (total: 00:00:21)

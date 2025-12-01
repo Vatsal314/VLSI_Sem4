@@ -1,0 +1,11 @@
+s1(25Jan2025:14:16:37):  irun -s +gui +linedebug +access+rwc -q /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux32.v 
+s2(25Jan2025:14:16:39):  irun -s +gui +linedebug +access+rwc -q /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux_tb.v 
+s3(25Jan2025:14:16:47):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux32.v 
+s4(25Jan2025:14:16:49):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux_tb.v 
+s5(25Jan2025:14:16:55):  irun -s +gui +linedebug +access+rwc -q /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux32.v 
+s6(25Jan2025:14:17:00):  irun -s +gui +linedebug +access+rwc -q /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux_tb.v 
+s7(25Jan2025:14:19:23):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux32.v 
+s8(25Jan2025:14:18:32):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux32.v 
+s9(25Jan2025:14:17:14):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux32.v 
+s10(25Jan2025:14:18:34):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux_tb.v 
+s11(25Jan2025:14:19:25):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux_tb.v 

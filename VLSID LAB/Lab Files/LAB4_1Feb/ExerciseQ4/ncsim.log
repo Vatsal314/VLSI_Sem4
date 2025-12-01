@@ -1,0 +1,15 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_master_slave_jk_flipflop.J tb_master_slave_jk_flipflop.K tb_master_slave_jk_flipflop.Q tb_master_slave_jk_flipflop.Q_bar tb_master_slave_jk_flipflop.clk tb_master_slave_jk_flipflop.rst
+Created probe 1
+ncsim> run
+Simulation stopped via $stop(1) at time 70 NS + 0
+ncsim> ^C
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 293.7M data = 332.3M total (335.9M Peak)
+ncsim: CPU Usage - 6.4s system + 1.5s user = 7.8s total (1341.7s, 0.6% cpu)

@@ -1,0 +1,25 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm nand3_tb.a nand3_tb.b nand3_tb.c nand3_tb.i nand3_tb.out
+Created probe 1
+ncsim> run
+Time = 0, a = 0, b = 0, c = 0, out = 0 
+Time = 10, a = 0, b = 0, c = 1, out = 0 
+Time = 20, a = 0, b = 1, c = 0, out = 1 
+Time = 30, a = 0, b = 1, c = 1, out = 1 
+Time = 40, a = 1, b = 0, c = 0, out = 0 
+Time = 50, a = 1, b = 0, c = 1, out = 0 
+Time = 60, a = 1, b = 1, c = 0, out = 1 
+Time = 70, a = 1, b = 1, c = 1, out = 1 
+Simulation stopped via $stop(1) at time 380 NS + 0
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 294.8M data = 333.4M total (337.0M Peak)
+ncsim: CPU Usage - 0.3s system + 0.1s user = 0.4s total (73.3s, 0.5% cpu)

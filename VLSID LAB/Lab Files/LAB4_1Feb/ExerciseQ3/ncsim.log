@@ -1,0 +1,30 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_universal_shift_register.clk tb_universal_shift_register.data_in tb_universal_shift_register.data_out tb_universal_shift_register.mode tb_universal_shift_register.reset tb_universal_shift_register.serial_in
+Created probe 1
+ncsim> run
+Time: 0 | Reset: 1 | Mode: 00 | Data In: 0000 | Serial In: 0 | Data Out: xxxx
+Time: 5 | Reset: 1 | Mode: 00 | Data In: 0000 | Serial In: 0 | Data Out: 0000
+Time: 20 | Reset: 0 | Mode: 11 | Data In: 1101 | Serial In: 0 | Data Out: 0000
+Time: 25 | Reset: 0 | Mode: 11 | Data In: 1101 | Serial In: 0 | Data Out: 1101
+Time: 30 | Reset: 0 | Mode: 01 | Data In: 1101 | Serial In: 1 | Data Out: 1101
+Time: 35 | Reset: 0 | Mode: 01 | Data In: 1101 | Serial In: 1 | Data Out: 1110
+Time: 45 | Reset: 0 | Mode: 01 | Data In: 1101 | Serial In: 1 | Data Out: 1111
+Time: 70 | Reset: 0 | Mode: 10 | Data In: 1101 | Serial In: 0 | Data Out: 1111
+Time: 75 | Reset: 0 | Mode: 10 | Data In: 1101 | Serial In: 0 | Data Out: 1110
+Time: 85 | Reset: 0 | Mode: 10 | Data In: 1101 | Serial In: 0 | Data Out: 1100
+Time: 95 | Reset: 0 | Mode: 10 | Data In: 1101 | Serial In: 0 | Data Out: 1000
+Time: 105 | Reset: 0 | Mode: 10 | Data In: 1101 | Serial In: 0 | Data Out: 0000
+Time: 110 | Reset: 0 | Mode: 00 | Data In: 1101 | Serial In: 0 | Data Out: 0000
+Simulation stopped via $stop(1) at time 130 NS + 0
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 293.7M data = 332.3M total (335.9M Peak)
+ncsim: CPU Usage - 0.1s system + 0.0s user = 0.2s total (30.9s, 0.6% cpu)

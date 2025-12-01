@@ -1,0 +1,96 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[14:55:46.121289] Configured Lic search path (21.01-s002): 5280@cadence-encsrv
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: 
+Date:    Sat Mar 01 14:55:46 2025
+Host:    mit-ecpg-cdn30 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (20cores*28cpus*1physical cpu*Intel(R) Core(TM) i7-14700 33792KB) (15867360KB)
+PID:     16391
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[14:55:46.199080] Periodic Lic check successful
+[14:55:46.199083] Feature usage summary:
+[14:55:46.199088] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (3 seconds elapsed).
+
+WARNING: This version of the tool is 982 days old.
+@genus:root: 1> read_libs /home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@genus:root: 2> read_hdl q.v
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'q.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+@genus:root: 3> elaborate
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@genus:root: 4> read_sdc q_sdc.sdc
+Design not exist for read_sdc
+@genus:root: 5> set_db syn_generic_effort medium
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+1 medium
+@genus:root: 6> set_db syn_map_effort medium
+  Setting attribute of root '/': 'syn_map_effort' = medium
+1 medium
+@genus:root: 7> set_db syn_opt_effort medium
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+1 medium
+@genus:root: 8> syn_generic
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_gen
+1
+@genus:root: 9> syn_map
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_map
+1
+@genus:root: 10> syn_opt
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_opt
+1
+@genus:root: 11> report_timing > q_timing.rep
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [report_timing]
+        : No elaborated designs in memory
+        : A design must first be read in with 'read_hdl' command and elaborated with 'elaborate' command.
+Nothing to report
+1
+@genus:root: 12> report_area > q_area.rep
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [::report::area::report_area]
+        : There is no design here.
+Failed on find_unique_design
+@genus:root: 13> report_power > q_power.rep
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [::report::power::report_power]
+        : There is no design here.
+Failed on find_unique_design
+@genus:root: 14> write_hdl > q_netlist.v
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [write_hdl]
+        : There is no design here.
+Failed on find_unique_design
+@genus:root: 15> write_sdc > q.sdc
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [write_sdc]
+        : There is no design here.
+Failed on find_unique_design

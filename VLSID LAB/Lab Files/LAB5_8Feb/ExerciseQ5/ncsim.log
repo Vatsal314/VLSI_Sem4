@@ -1,0 +1,20 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm cmos_2to4_decoder_tb.S0 cmos_2to4_decoder_tb.S1 cmos_2to4_decoder_tb.Y0 cmos_2to4_decoder_tb.Y1 cmos_2to4_decoder_tb.Y2 cmos_2to4_decoder_tb.Y3
+Created probe 1
+ncsim> run
+S1=0 S0=0 -> Y0=x Y1=1 Y2=x Y3=x
+S1=0 S0=1 -> Y0=1 Y1=1 Y2=x Y3=x
+S1=1 S0=0 -> Y0=1 Y1=x Y2=1 Y3=1
+S1=1 S0=1 -> Y0=x Y1=x Y2=1 Y3=1
+Simulation complete via $finish(1) at time 40 NS + 0
+./cmos_2to4_decoder_tb.v:17         $finish;
+ncsim> ^C
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 294.7M data = 333.4M total (336.9M Peak)
+ncsim: CPU Usage - 0.1s system + 0.0s user = 0.1s total (24.6s, 0.6% cpu)

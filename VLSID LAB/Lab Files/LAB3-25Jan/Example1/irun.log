@@ -1,0 +1,9 @@
+irun: *W,BADPRF: The linedebug option may have an adverse performance impact.
+irun: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/INCA_libs/irun.lnx8664.15.20.nc/.ncrun.lock'. pid:11710.#	Top level design units:
+		mux32
+udent/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux_tb.v is out of date, the exec ncvlog will be re-invoked.
+irun: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/student/Vatsal_58_VLSI/LAB3-25Jan/Exampl
+-------------------------------------
+Relinquished control #2 i=32'hCCCCCCC; s=5'd32;
+                        |
+ncvlog: *W,INTOVF (/home/student/Vatsal_58_VLSI/LAB3-25Jan/Example1/mux_tb.v,41|24): bit overflow during conversion from text [2.5(IEEE)] (5 bits).

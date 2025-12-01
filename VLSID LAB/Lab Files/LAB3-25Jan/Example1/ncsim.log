@@ -1,0 +1,51 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm mux32_tb.i mux32_tb.s mux32_tb.y
+Created probe 1
+ncsim> run
+                   0i=cccccccc,s= 0,y=0
+                   2i=0ccccccc,s= 1,y=0
+                   4i=0ccccccc,s= 2,y=1
+                   6i=0ccccccc,s= 3,y=1
+                   8i=0ccccccc,s= 4,y=0
+                  10i=0ccccccc,s= 5,y=0
+                  12i=0ccccccc,s= 6,y=1
+                  14i=0ccccccc,s= 7,y=1
+                  16i=0ccccccc,s= 8,y=0
+                  18i=0ccccccc,s= 9,y=0
+                  20i=0ccccccc,s=10,y=1
+                  22i=0ccccccc,s=11,y=1
+                  24i=0ccccccc,s=12,y=0
+                  26i=0ccccccc,s=13,y=0
+                  28i=0ccccccc,s=14,y=1
+                  30i=0ccccccc,s=15,y=1
+                  32i=0ccccccc,s=16,y=0
+                  34i=0ccccccc,s=17,y=0
+                  36i=0ccccccc,s=18,y=1
+                  38i=0ccccccc,s=19,y=1
+                  40i=0ccccccc,s=20,y=0
+                  42i=0ccccccc,s=21,y=0
+                  44i=0ccccccc,s=22,y=1
+                  46i=0ccccccc,s=23,y=1
+                  48i=0ccccccc,s=24,y=0
+                  50i=0ccccccc,s=25,y=0
+                  52i=0ccccccc,s=26,y=1
+                  54i=0ccccccc,s=27,y=1
+                  56i=0ccccccc,s=28,y=0
+                  58i=0ccccccc,s=29,y=0
+                  60i=0ccccccc,s=30,y=0
+                  62i=0ccccccc,s=31,y=0
+                  64i=0ccccccc,s= 0,y=0
+Simulation complete via $finish(1) at time 66 NS + 0
+./mux_tb.v:46 #66 $finish;
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 298.7M data = 337.4M total (340.9M Peak)
+ncsim: CPU Usage - 0.4s system + 0.1s user = 0.5s total (85.6s, 0.6% cpu)

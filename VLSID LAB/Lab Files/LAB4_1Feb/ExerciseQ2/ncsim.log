@@ -1,0 +1,43 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm up_down_counter_tb.clk up_down_counter_tb.count up_down_counter_tb.reset up_down_counter_tb.up_down
+Created probe 1
+ncsim> run
+Time: 0 | Reset: 1 | Up/Down: 1 | Count: xxxx
+Time: 5 | Reset: 1 | Up/Down: 1 | Count: 0000
+Time: 20 | Reset: 0 | Up/Down: 1 | Count: 0000
+Time: 25 | Reset: 0 | Up/Down: 1 | Count: 0001
+Time: 35 | Reset: 0 | Up/Down: 1 | Count: 0010
+Time: 45 | Reset: 0 | Up/Down: 1 | Count: 0011
+Time: 55 | Reset: 0 | Up/Down: 1 | Count: 0100
+Time: 65 | Reset: 0 | Up/Down: 1 | Count: 0101
+Time: 75 | Reset: 0 | Up/Down: 1 | Count: 0110
+Time: 85 | Reset: 0 | Up/Down: 1 | Count: 0111
+Time: 95 | Reset: 0 | Up/Down: 1 | Count: 1000
+Time: 100 | Reset: 0 | Up/Down: 0 | Count: 1000
+Time: 105 | Reset: 0 | Up/Down: 0 | Count: 0111
+Time: 115 | Reset: 0 | Up/Down: 0 | Count: 0110
+Time: 125 | Reset: 0 | Up/Down: 0 | Count: 0101
+Time: 135 | Reset: 0 | Up/Down: 0 | Count: 0100
+Time: 145 | Reset: 0 | Up/Down: 0 | Count: 0011
+Time: 155 | Reset: 0 | Up/Down: 0 | Count: 0010
+Time: 165 | Reset: 0 | Up/Down: 0 | Count: 0001
+Time: 175 | Reset: 0 | Up/Down: 0 | Count: 0000
+Time: 180 | Reset: 1 | Up/Down: 0 | Count: 0000
+Time: 200 | Reset: 0 | Up/Down: 1 | Count: 0000
+Time: 205 | Reset: 0 | Up/Down: 1 | Count: 0001
+Time: 215 | Reset: 0 | Up/Down: 1 | Count: 0010
+Time: 225 | Reset: 0 | Up/Down: 1 | Count: 0011
+Time: 235 | Reset: 0 | Up/Down: 1 | Count: 0100
+Simulation stopped via $stop(1) at time 240 NS + 0
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 294.7M data = 333.3M total (336.9M Peak)
+ncsim: CPU Usage - 0.2s system + 0.0s user = 0.2s total (39.2s, 0.6% cpu)

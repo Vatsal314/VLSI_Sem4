@@ -1,0 +1,4 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+ncsim: *F,MISSIM: Missing simulation name.
+ncsim: Memory Usage - 38.6M program + 18.1M data = 56.7M total (56.7M Peak)
+ncsim: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)

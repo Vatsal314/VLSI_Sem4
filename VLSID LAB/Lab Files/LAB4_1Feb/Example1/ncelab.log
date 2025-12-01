@@ -1,0 +1,6 @@
+ncelab(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+fulladder fulladder_0(a[0],b[0],0,sum[0],cout[0]);
+                                |
+ncelab: *W,CUVMPW (./nbitadder.v,12|32): port sizes differ in port connection (32/1).
+ncelab: Memory Usage - 49.9M program + 32.8M data = 82.7M total (Peak 87.8M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 42.3% cpu)

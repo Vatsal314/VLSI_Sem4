@@ -1,0 +1,6 @@
+ncelab(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+ncelab: *E,MTOMDU: More than one unit matches 'worklib.fa_tb': 
+	module worklib.fa_tb:v (VST)
+	module worklib.fa_tb:module (VST).
+ncelab: Memory Usage - 49.9M program + 25.9M data = 75.9M total (Peak 75.9M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)

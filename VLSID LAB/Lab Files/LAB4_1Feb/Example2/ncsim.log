@@ -1,0 +1,30 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm mod6_async_counter_tb.clk mod6_async_counter_tb.q mod6_async_counter_tb.reset
+Created probe 1
+ncsim> run
+Time=0|Reset=1|Counter=000
+Time=10|Reset=0|Counter=000
+Time=15|Reset=0|Counter=001
+Time=25|Reset=0|Counter=010
+Time=35|Reset=0|Counter=011
+Time=45|Reset=0|Counter=100
+Time=55|Reset=0|Counter=101
+Time=65|Reset=0|Counter=000
+Time=75|Reset=0|Counter=001
+Time=85|Reset=0|Counter=010
+Time=95|Reset=0|Counter=011
+Time=105|Reset=0|Counter=100
+Simulation complete via $finish(1) at time 110 NS + 0
+/home/student/BTECH VLSI BATCH2/230959150/Exp 4/Example2/mod6_async_counter_tb.v:19 $finish;
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 294.7M data = 333.3M total (336.9M Peak)
+ncsim: CPU Usage - 0.6s system + 0.1s user = 0.7s total (138.6s, 0.5% cpu)

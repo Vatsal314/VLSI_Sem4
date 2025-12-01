@@ -1,0 +1,27 @@
+ncelab(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+  DFFQX1 \data_out_reg[0] (.CK (clk), .D (n_17), .Q (data_out[0]));
+                         |
+ncelab: *E,CUVMUR (./universal_shift_register_netlist.v,20|25): instance 'universal_shift_register.\data_out_reg[0] ' of design unit 'DFFQX1' is unresolved in 'worklib.universal_shift_register:module'.
+  NAND2XL g462__2398(.A (n_8), .B (n_7), .Y (n_17));
+                   |
+ncelab: *E,CUVMUR (./universal_shift_register_netlist.v,24|19): instance 'universal_shift_register.g462__2398' of design unit 'NAND2XL' is unresolved in 'worklib.universal_shift_register:module'.
+  AOI22X1 g466__8428(.A0 (n_10), .A1 (data_out[1]), .B0 (n_6), .B1
+                   |
+ncelab: *E,CUVMUR (./universal_shift_register_netlist.v,28|19): instance 'universal_shift_register.g466__8428' of design unit 'AOI22X1' is unresolved in 'worklib.universal_shift_register:module'.
+  AOI22XL g470__1617(.A0 (n_6), .A1 (serial_in), .B0 (n_5), .B1
+                   |
+ncelab: *E,CUVMUR (./universal_shift_register_netlist.v,36|19): instance 'universal_shift_register.g470__1617' of design unit 'AOI22XL' is unresolved in 'worklib.universal_shift_register:module'.
+  AND2X1 g474__8246(.A (mode[0]), .B (n_1), .Y (n_9));
+                  |
+ncelab: *E,CUVMUR (./universal_shift_register_netlist.v,44|18): instance 'universal_shift_register.g474__8246' of design unit 'AND2X1' is unresolved in 'worklib.universal_shift_register:module'.
+  NOR2BXL g475__7098(.AN (n_1), .B (mode[0]), .Y (n_10));
+                   |
+ncelab: *E,CUVMUR (./universal_shift_register_netlist.v,45|19): instance 'universal_shift_register.g475__7098' of design unit 'NOR2BXL' is unresolved in 'worklib.universal_shift_register:module'.
+  NOR2XL g476__6131(.A (mode[0]), .B (n_0), .Y (n_6));
+                  |
+ncelab: *E,CUVMUR (./universal_shift_register_netlist.v,46|18): instance 'universal_shift_register.g476__6131' of design unit 'NOR2XL' is unresolved in 'worklib.universal_shift_register:module'.
+  NAND2BXL g478__7482(.AN (reset), .B (mode[1]), .Y (n_0));
+                    |
+ncelab: *E,CUVMUR (./universal_shift_register_netlist.v,49|20): instance 'universal_shift_register.g478__7482' of design unit 'NAND2BXL' is unresolved in 'worklib.universal_shift_register:module'.
+ncelab: Memory Usage - 49.9M program + 33.6M data = 83.6M total (Peak 83.6M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)
